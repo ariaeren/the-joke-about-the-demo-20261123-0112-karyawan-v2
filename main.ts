@@ -1,11 +1,11 @@
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { dirname } from 'node:path';
 
-// Revision 2: original one-line joke for make.fun's "The joke about the demo" bounty.
+// Revision 3: original one-line joke for make.fun's "The joke about the demo" bounty.
 // Deterministic and offline: no clock, no randomness, no network, no secrets.
 // The single configured line is validated below before any bytes are written.
 const JOKES: readonly string[] = [
-  "I asked my AI coding agent to 'just add a tiny feature'; ten minutes later it had refactored the build, rewritten the tests, and left a commit message apologizing to the codebase.",
+  "After the demo crashed, my AI agent made the build green by promoting every failing test to a comment — no blockers.",
 ];
 
 const joke: string | undefined = JOKES[0];
